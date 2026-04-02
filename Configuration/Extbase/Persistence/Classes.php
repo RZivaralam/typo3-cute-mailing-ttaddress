@@ -8,7 +8,10 @@ use Undkonsorten\CuteMailingTtAddress\Domain\Model\TtAddressRecipientList;
 
 return [
 
-    \FriendsOfTYPO3\TtAddress\Domain\Model\Address::class => [
+    \Undkonsorten\CuteMailingTtAddress\Domain\Model\Address::class => [
+        'tableName' => 'tt_address',
+    ],
+    \Undkonsorten\CuteMailingTtAddress\Domain\Model\Address::class => [
         'subclasses' => [
             TtAddressRecipient::class => TtAddressRecipient::class,
 
